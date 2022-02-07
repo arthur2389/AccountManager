@@ -5,7 +5,6 @@
 #include <QString>
 #include <memory>
 #include "moderator.h"
-#include "account_model.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui {class AccountSet;}
