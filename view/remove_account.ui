@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>AccountClone</class>
- <widget class="QDialog" name="AccountClone">
+ <class>RemoveAccount</class>
+ <widget class="QDialog" name="RemoveAccount">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>293</width>
-    <height>89</height>
+    <width>235</width>
+    <height>80</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -15,21 +15,14 @@
   </property>
   <layout class="QVBoxLayout" name="verticalLayout">
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>New account name:</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QLineEdit" name="lineEditNewAccountName"/>
-     </item>
-    </layout>
+    <widget class="QLabel" name="removeAccountMsg">
+     <property name="text">
+      <string>TextLabel</string>
+     </property>
+    </widget>
    </item>
    <item>
-    <widget class="QDialogButtonBox" name="cloneAccountButtons">
+    <widget class="QDialogButtonBox" name="buttonBox">
      <property name="orientation">
       <enum>Qt::Horizontal</enum>
      </property>
@@ -43,9 +36,9 @@
  <resources/>
  <connections>
   <connection>
-   <sender>cloneAccountButtons</sender>
+   <sender>buttonBox</sender>
    <signal>accepted()</signal>
-   <receiver>AccountClone</receiver>
+   <receiver>RemoveAccount</receiver>
    <slot>accept()</slot>
    <hints>
     <hint type="sourcelabel">
@@ -59,9 +52,9 @@
    </hints>
   </connection>
   <connection>
-   <sender>cloneAccountButtons</sender>
+   <sender>buttonBox</sender>
    <signal>rejected()</signal>
-   <receiver>AccountClone</receiver>
+   <receiver>RemoveAccount</receiver>
    <slot>reject()</slot>
    <hints>
     <hint type="sourcelabel">

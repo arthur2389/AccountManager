@@ -17,7 +17,7 @@ public:
     const AccountModel& get_account(QString name) const;
     std::vector<QString> get_account_names() const;
     void set_account(AccountModel& account);
-
+    bool remove_account(QString name);
 
 private:
     std::map<QString, AccountModel> acc;

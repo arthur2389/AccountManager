@@ -15,6 +15,12 @@ AccountModel::AccountModel(QString name) : m_name{name}, m_email{}, m_password{}
 AccountModel::AccountModel() : m_name{}, m_email{}, m_password{}, m_username{}
 {}
 
+AccountModel AccountModel::clone(QString name)
+{
+    name = name != "" ? name : m_name;
+    return AccountModel(name, m_email, m_password, m_username);
+}
+
 void AccountModel::set_username(QString username)
 {
     m_username = username;

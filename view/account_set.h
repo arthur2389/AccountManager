@@ -15,7 +15,7 @@ class AccountSet : public QDialog
     Q_OBJECT
 
 public:
-    AccountSet(QWidget *parent, std::shared_ptr<Moderator> mod, QString account_to_edit);
+    AccountSet(QWidget *parent, std::shared_ptr<Moderator> moderator, QString account_to_edit);
     ~AccountSet();
 
 private slots:

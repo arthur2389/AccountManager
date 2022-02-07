@@ -15,6 +15,7 @@ SOURCES += \
     view/account_set.cpp \
     main.cpp \
     view/mainwindow.cpp \
+    view/remove_account.cpp
 
 HEADERS += \
     view/account_clone.h \
@@ -22,11 +23,13 @@ HEADERS += \
     model/account_model.h \
     view/account_set.h \
     view/mainwindow.h \
+    view/remove_account.h
 
 FORMS += \
     view/account_clone.ui \
     view/account_set.ui \
-    view/mainwindow.ui
+    view/mainwindow.ui \
+    view/remove_account.ui
 
 INCLUDEPATH += \
     $$PWD/model \

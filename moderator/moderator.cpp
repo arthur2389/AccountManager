@@ -8,9 +8,6 @@ Moderator::Moderator(std::vector<AccountModel> accounts)
     }
 }
 
-Moderator::Moderator(Moderator& other)
-{}
-
 AccountModel Moderator::build_empty_account(QString name) const
 {
     return AccountModel(name);
@@ -35,4 +32,12 @@ std::vector<QString> Moderator::get_account_names() const
 void Moderator::set_account(AccountModel &account)
 {
     acc[account.get_name()] = account;
+}
+
+bool Moderator::remove_account(QString name)
+{
+    std::map<QString,AccountModel>::iterator it = acc.find(name);
+    if (it == acc.end()) return false;
+    acc.erase(it);
+    return true;
 }
