@@ -9,6 +9,7 @@ AccountSet::AccountSet(QWidget *parent, std::shared_ptr<Moderator> moderator, QS
     mod(moderator)
 {
     ui->setupUi(this);
+    setWindowTitle("Set Account");
 
     // Emply string means adding new account
     if (!account_to_edit.isEmpty())
@@ -30,14 +31,14 @@ AccountSet::~AccountSet()
 
 void AccountSet::on_newAccountButtons_accepted()
 {
+    if (ui->lineEditAccountName->text().isEmpty()) return;
+
     AccountModel acc = mod->build_empty_account(ui->lineEditAccountName->text());
 
 
     acc.set_email(ui->lineEditEmil->text());
     acc.set_password(ui->lineEditPassword->text());
     acc.set_username(ui->lineEditUsername->text());
-
-    std::cout << "Account before set: " << acc;
 
     mod->set_account(acc);
 }

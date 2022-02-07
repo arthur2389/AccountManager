@@ -14,6 +14,7 @@ public:
                  QString username);
     AccountModel(QString name);
     AccountModel();
+    AccountModel clone(QString name=QString());
     void set_username(QString username);
     void set_email(QString email);
     void set_password(QString password);

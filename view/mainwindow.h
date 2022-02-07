@@ -22,8 +22,10 @@ private:
     std::shared_ptr<Moderator> mod;
     Ui::MainWindow *ui;
 
-    void load_items(void) const;
-    void display_account(void) const;
     void set_account(QString acc);
+    void clone_account();
+    void load_items(void);
+    void display_account(void);
+    void toggle_account_buttons(bool state);
 };
 #endif // MAINWINDOW_H

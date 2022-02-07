@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>408</width>
+    <width>465</width>
     <height>274</height>
    </rect>
   </property>
@@ -131,15 +131,31 @@
      <layout class="QVBoxLayout" name="verticalLayout_4">
       <item>
        <widget class="QPushButton" name="editAccount">
+        <property name="statusTip">
+         <string/>
+        </property>
         <property name="text">
          <string>Edit</string>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="CloneAccount">
+       <widget class="QPushButton" name="cloneAccount">
+        <property name="statusTip">
+         <string/>
+        </property>
         <property name="text">
          <string>Clone</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeAccount">
+        <property name="statusTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>Remove</string>
         </property>
        </widget>
       </item>
@@ -165,15 +181,11 @@
       </item>
       <item>
        <widget class="QPushButton" name="addAccount">
+        <property name="statusTip">
+         <string>Add new account</string>
+        </property>
         <property name="text">
          <string>Add</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="removeAccount">
-        <property name="text">
-         <string>Remove</string>
         </property>
        </widget>
       </item>
@@ -199,7 +211,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>408</width>
+     <width>465</width>
      <height>22</height>
     </rect>
    </property>
